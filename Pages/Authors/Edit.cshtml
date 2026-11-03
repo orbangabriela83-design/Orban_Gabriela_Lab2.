@@ -1,0 +1,6 @@
+@page
+@model Orban_Gabriela_Lab2.Pages.Authors.EditModel
+@{ViewData["Title"]="Edit Author";}
+<h1>Edit Author</h1>
+<form method="post"><div asp-validation-summary="ModelOnly" class="text-danger"></div><input type="hidden" asp-for="Item.ID"/><div class="mb-3"><label asp-for="Item.FirstName" class="form-label"></label><input asp-for="Item.FirstName" type="text" class="form-control"/><span asp-validation-for="Item.FirstName" class="text-danger"></span></div><div class="mb-3"><label asp-for="Item.LastName" class="form-label"></label><input asp-for="Item.LastName" type="text" class="form-control"/><span asp-validation-for="Item.LastName" class="text-danger"></span></div><button class="btn btn-primary">Save</button></form><p><a asp-page="./Index">Back to List</a></p>
+@section Scripts {<partial name="_ValidationScriptsPartial"/>}

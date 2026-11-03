@@ -1,0 +1,5 @@
+@page
+@model Orban_Gabriela_Lab2.Pages.Publishers.DetailsModel
+@{ViewData["Title"]="Details Publisher";}
+<h1>Details Publisher</h1>
+<div asp-validation-summary="All" class="text-danger"></div><dl class="row"><dt class="col-sm-3">PublisherName</dt><dd class="col-sm-9">@Model.Item.PublisherName</dd></dl><p><a asp-page="./Edit" asp-route-id="@Model.Item.ID">Edit</a></p><p><a asp-page="./Index">Back to List</a></p>

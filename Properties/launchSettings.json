@@ -1,0 +1,22 @@
+{
+  "profiles": {
+    "SQL Server": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:5202",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DatabaseProvider": "SqlServer"
+      }
+    },
+    "SQLite": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:5202",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DatabaseProvider": "Sqlite"
+      }
+    }
+  }
+}

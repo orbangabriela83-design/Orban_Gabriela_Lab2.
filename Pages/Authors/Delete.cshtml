@@ -1,0 +1,5 @@
+@page
+@model Orban_Gabriela_Lab2.Pages.Authors.DeleteModel
+@{ViewData["Title"]="Delete Author";}
+<h1>Delete Author</h1>
+<p>Are you sure you want to delete this author?</p><div asp-validation-summary="All" class="text-danger"></div><dl class="row"><dt class="col-sm-3">FirstName</dt><dd class="col-sm-9">@Model.Item.FirstName</dd><dt class="col-sm-3">LastName</dt><dd class="col-sm-9">@Model.Item.LastName</dd></dl><form method="post"><input type="hidden" asp-for="Item.ID"/><button class="btn btn-danger">Delete</button></form><p><a asp-page="./Index">Back to List</a></p>
